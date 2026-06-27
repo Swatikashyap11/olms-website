@@ -55,7 +55,7 @@ function Footer() {
             >
 
               <p>
-                Monday - Friday
+                Tuesday - Friday
               </p>
 
               <span className="text-yellow-700 font-semibold">
