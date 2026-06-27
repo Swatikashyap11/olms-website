@@ -1,12 +1,3 @@
-import { motion } from "framer-motion";
-
-import {
-  FaUsers,
-  FaPlay,
-  FaMapMarkerAlt,
-  FaStar,
-  FaTheaterMasks,
-} from "react-icons/fa";
 
 function Hero() {
 
@@ -16,7 +7,7 @@ function Hero() {
       id="home"
       className="relative h-screen bg-cover bg-center bg-no-repeat overflow-hidden"
       style={{
-        backgroundImage: "url('https://images.unsplash.com/photo-1503095396549-807759245b35?q=80&w=1600&auto=format&fit=crop')"
+        backgroundImage: "url('https://lh3.googleusercontent.com/p/AF1QipPtE9vq1ZOlrMuSsFEfmGnZiUmDGiKhpzUpgNLw=s680-w680-h510-rw')"
       }}
     >
 
@@ -34,74 +25,42 @@ function Hero() {
 
           {/* MAIN HEADING */}
 
-         <motion.h1
-initial={{opacity:0,y:60}}
-animate={{opacity:1,y:0}}
-transition={{duration:0.8}}
-className="text-white font-black uppercase leading-[0.9]"
-style={{
-fontFamily:"Oswald",
-fontSize:"clamp(60px,9vw,130px)"
-}}
->
+          <h1
+            className="text-white text-[58px] sm:text-[80px] md:text-[120px] font-black uppercase leading-[0.88]"
+            style={{ fontFamily: "Oswald, sans-serif" }}
+          >
 
-<span className="block">
-MUSICAL
-</span>
+            ACT
+            <span className="text-yellow-300">.</span>
 
-<span className="block text-yellow-400">
-THEATRE
-</span>
+            <br />
 
-<span className="block">
-CLASSES
-</span>
+            SING
+            <span className="text-yellow-300">.</span>
 
-<span
-className="block normal-case italic text-white mt-1"
-style={{
-fontFamily:"Dancing Script",
-fontSize:"clamp(42px,5vw,70px)"
-}}
->
+            <br />
 
-for Kids
+            DANCE
+            <span className="text-yellow-300">.</span>
 
-</span>
+          </h1>
 
-</motion.h1>
- <motion.h2
-initial={{opacity:0}}
-animate={{opacity:1}}
-transition={{delay:.3}}
-className="text-yellow-300 uppercase mt-6 tracking-wide text-xl md:text-3xl font-bold"
-style={{fontFamily:"Oswald"}}
->
 
-ACT. SING. DANCE. SHINE ON STAGE.
 
-</motion.h2>
+          {/* SUBTEXT */}
 
-<motion.p
-initial={{opacity:0}}
-animate={{opacity:1}}
-transition={{delay:.5}}
-className="text-white/90 mt-4 text-lg md:text-2xl max-w-xl leading-relaxed"
->
+          <p
+            className="text-yellow-300 text-md sm:text-xl md:text-3xl mt-3 md:mt-4 max-w-3xl leading-tight font-bold"
+            style={{
+              fontFamily: "Oswald, sans-serif",
+              textShadow: "0px 4px 10px rgba(0,0,0,0.7)"
+            }}
+          >
 
-<b className="text-yellow-300">
+            Explore talent through Theatre,
+            Musicals and unforgettable performances.
 
-Confidence begins on stage.
-
-</b>
-
-<br/>
-
-Through acting, singing and dance,
-children discover their voice while
-performing in spectacular musicals.
-
-</motion.p>
+          </p>
 
 
 
