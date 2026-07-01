@@ -16,7 +16,7 @@ function About() {
             <img
               src="image13.png"
               alt="About Us"
-              className="relative w-full h-[550px] object-cover rounded-[30px] shadow-2xl"
+              className="relative w-full h-137.5 object-cover rounded-[30px] shadow-2xl"
             />
 
           </div>
@@ -32,7 +32,7 @@ function About() {
               About Us
             </span>
 
-            <div className="w-16 h-[3px] bg-yellow-500 rounded-full mt-4 mb-8"></div>
+            <div className="w-16 h-0.75 bg-yellow-500 rounded-full mt-4 mb-8"></div>
 
 
             <div

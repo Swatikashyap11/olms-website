@@ -12,11 +12,11 @@ function Hero() {
       <div className="absolute inset-0 bg-black/50"></div>
 
       {/* Left Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black via-black/55 to-transparent"></div>
+      <div className="absolute inset-0 bg-linear-to-r from-black via-black/55 to-transparent"></div>
 
       {/* Content */}
       <div className="relative z-10 flex items-center min-h-screen px-6 md:px-16">
-        <div className="max-w-[520px]">
+        <div className="max-w-130">
 
           {/* Heading */}
           <h1

@@ -31,7 +31,7 @@ function Founder() {
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2AxipcGYgnMi2AQq82wBGNx7d3EV8fmOqqsv75o7vTg_RUE_Oz0_xVu0z&s=10"
               alt="Surbhi Madan"
-              className="w-full h-[650px] object-cover rounded-3xl border-[6px] border-yellow-400 shadow-2xl"
+              className="w-full h-162.5 object-cover rounded-3xl border-[6px] border-yellow-400 shadow-2xl"
             />
 
             <div className="text-center mt-6">
