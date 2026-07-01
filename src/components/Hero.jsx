@@ -23,11 +23,11 @@ function Hero() {
             className="uppercase leading-[0.9] font-black"
             style={{ fontFamily: "Oswald, sans-serif" }}
           >
-            <span className="block text-white text-6xl md:text-8xl">
+            <span className="block text-white text-xl md:text-8xl">
               MUSICAL
             </span>
 
-            <span className="block text-yellow-400 text-6xl md:text-8xl">
+            <span className="block text-yellow-400 text-5xl md:text-8xl">
               THEATRE
             </span>
 
@@ -52,16 +52,46 @@ function Hero() {
           </h3>
 
           {/* Description */}
-          <div className="mt-5 bg-black/45 border border-pink-500 rounded-xl p-5 max-w-xl backdrop-blur-sm">
-            <h4 className="text-yellow-300 text-2xl font-bold">
-              Confidence begins on stage.
-            </h4>
 
-            <p className="text-gray-200 mt-2 text-lg">
-              Through acting, singing and dance, children discover their voice
-              while performing in spectacular musicals.
-            </p>
-          </div>
+<div className="mt-8 max-w-[600px]">
+
+  <h2
+    className="text-[42px] md:text-[60px] leading-[0.9] uppercase"
+    style={{ fontFamily: "Bangers, cursive" }}
+  >
+    <span className="block text-yellow-400 drop-shadow-[0_0_15px_rgba(255,215,0,0.9)]">
+      CONFIDENCE
+    </span>
+
+    <span className="block text-white">
+      BEGINS ON STAGE.
+    </span>
+  </h2>
+
+  {/* Yellow Shiny Line */}
+  <div className="relative mt-5 w-[340px] md:w-[480px]">
+    <div className="h-[4px] rounded-full bg-gradient-to-r from-yellow-300 via-yellow-400 to-yellow-300 shadow-[0_0_20px_#FFD700]"></div>
+
+    <div className="absolute -left-1 -top-[6px] h-4 w-4 rounded-full bg-yellow-300 shadow-[0_0_25px_#FFD700]"></div>
+
+    <div className="absolute left-1/2 -translate-x-1/2 -top-[3px] h-2 w-2 rounded-full bg-white shadow-[0_0_18px_white]"></div>
+  </div>
+
+  <p
+    className="mt-7 text-[20px] leading-9 text-gray-200"
+    style={{ fontFamily: "'Patrick Hand', cursive" }}
+  >
+    Through acting, singing and dance,
+    <span className="text-yellow-400 font-bold">
+      {" "}children discover their voice{" "}
+    </span>
+    while performing in
+    <span className="text-yellow-400 font-bold">
+      {" "}spectacular musicals.
+    </span>
+  </p>
+
+</div>
 
           {/* Buttons */}
           <div className="flex flex-wrap gap-4 mt-8">
@@ -81,57 +111,6 @@ function Hero() {
             </button>
 
           </div>
-
-          {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-10 bg-black/60 rounded-xl border border-yellow-400 p-5">
-
-            <div className="text-center">
-              <h2 className="text-yellow-400 text-3xl font-bold">12+</h2>
-              <p className="text-white text-sm">
-                Years of Experience
-              </p>
-            </div>
-
-            <div className="text-center">
-              <h2 className="text-yellow-400 text-3xl font-bold">
-                5000+
-              </h2>
-              <p className="text-white text-sm">
-                Children Trained
-              </p>
-            </div>
-
-            <div className="text-center">
-              <h2 className="text-yellow-400 text-3xl font-bold">
-                100+
-              </h2>
-              <p className="text-white text-sm">
-                Musicals Produced
-              </p>
-            </div>
-
-            <div className="text-center">
-              <h2 className="text-yellow-400 text-3xl font-bold">
-                3
-              </h2>
-              <p className="text-white text-sm">
-                Studios in Delhi NCR
-              </p>
-            </div>
-
-          </div>
-
-          {/* Bottom Badge */}
-          <div className="inline-block mt-6 bg-black/70 border border-yellow-400 rounded-full px-6 py-3">
-
-            <p className="text-white text-sm md:text-base">
-              ⭐ For children aged <span className="text-yellow-400 font-bold">3–12 Years</span>
-              &nbsp; | &nbsp;
-              Delhi • Gurgaon • Punjabi Bagh
-            </p>
-
-          </div>
-
         </div>
       </div>
     </section>
