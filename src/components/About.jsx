@@ -1,126 +1,77 @@
 function About() {
-
   return (
-
     <section
       id="about"
-      className="bg-linear-to-b from-white via-[#fff9e6] to-[#ffe680] text-black px-6 md:px-16 py-16"
+      className="py-24 bg-linear-to-b from-white via-[#fffdf8] to-[#fff8e6]"
     >
+      <div className="max-w-7xl mx-auto px-6 lg:px-10">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
 
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* LEFT IMAGE */}
 
-        {/* LEFT IMAGE */}
+          <div className="relative group">
 
-        <div className="overflow-hidden rounded-2xl shadow-2xl">
+            <div className="absolute -inset-3 bg-yellow-200 rounded-[35px] blur-2xl opacity-30 group-hover:opacity-40 transition"></div>
 
-          <img
-            src="/photo2.jpg"
-            alt="about"
-            className="w-full h-87.5 md:h-137.5 object-cover hover:scale-105 transition duration-500"
-          />
+            <img
+              src="image13.png"
+              alt="About Us"
+              className="relative w-full h-[550px] object-cover rounded-[30px] shadow-2xl"
+            />
 
-        </div>
+          </div>
 
+          {/* RIGHT CONTENT */}
 
+          <div>
 
-        {/* RIGHT CONTENT */}
+            <span
+              className="uppercase tracking-[5px] text-yellow-600 font-semibold"
+              style={{ fontFamily: "Oswald" }}
+            >
+              About Us
+            </span>
 
-        <div>
-
-          {/* SMALL HEADING */}
-
-          <p
-            className="text-yellow-600 uppercase tracking-[6px] text-sm md:text-base mb-4 font-bold"
-            style={{ fontFamily: "Oswald, sans-serif" }}
-          >
-            About Us
-          </p>
-
-
-
-          {/* MAIN HEADING */}
-
-          <h1
-            className="text-4xl md:text-6xl font-black uppercase leading-tight text-black"
-            style={{ fontFamily: "Oswald, sans-serif" }}
-          >
-
-            Where Creativity
-            Meets Performance
-
-          </h1>
+            <div className="w-16 h-[3px] bg-yellow-500 rounded-full mt-4 mb-8"></div>
 
 
-
-          {/* DESCRIPTION */}
-
-          <p
-            className="text-gray-800 text-lg md:text-xl leading-relaxed mt-7"
-            style={{ fontFamily: "oswald, sans-serif" }}
-          >
-
-         Every child has a story to tell. Through musical theatre, we help children discover their voice, express their creativity and build the confidence to perform with pride.
-
-          </p>
-
-
-
-          {/* FEATURES */}
-
-          <div className="grid grid-cols-2 gap-5 mt-9">
-
-            {/* BOX 1 */}
-
-            <div className="bg-white border border-yellow-500 rounded-xl p-5 shadow-lg hover:scale-105 transition duration-300">
-
-              <h2
-                className="text-yellow-600 text-3xl font-black"
-                style={{ fontFamily: "Oswald, sans-serif" }}
-              >
-                500+
-              </h2>
-
-              <p
-                className="mt-2 text-gray-700"
-                style={{ fontFamily: "Poppins, sans-serif" }}
-              >
-                Performances
+            <div
+              className="space-y-7 text-gray-700 leading-9 text-lg"
+              style={{ fontFamily: "Poppins" }}
+            >
+              <p>
+                Oompa Loompa Musicals was created with one simple belief —
+                every child deserves a chance to experience the magic of
+                theatre, regardless of their confidence or previous experience.
               </p>
 
-            </div>
-
-
-
-            {/* BOX 2 */}
-
-            <div className="bg-white border border-yellow-500 rounded-xl p-5 shadow-lg hover:scale-105 transition duration-300">
-
-              <h2
-                className="text-yellow-600 text-3xl font-black"
-                style={{ fontFamily: "Oswald, sans-serif" }}
-              >
-                1000+
-              </h2>
-
-              <p
-                className="mt-2 text-gray-700"
-                style={{ fontFamily: "Poppins, sans-serif" }}
-              >
-                Students
+              <p>
+                Our classes provide a warm and encouraging environment where
+                children discover acting, singing, movement, creativity and
+                teamwork while building confidence that stays with them far
+                beyond the stage.
               </p>
 
+              <p>
+                Every production is thoughtfully designed to ensure that each
+                child gets a meaningful role suited to their comfort,
+                personality and strengths. We believe theatre is not about
+                finding the best performer—it's about helping every child grow.
+              </p>
+
+              <p>
+                At Oompa Loompa Musicals, we celebrate imagination,
+                self-expression and joyful learning, creating unforgettable
+                experiences for children and families alike.
+              </p>
             </div>
 
           </div>
 
         </div>
-
       </div>
-
     </section>
-
-  )
-
+  );
 }
 
-export default About
+export default About;

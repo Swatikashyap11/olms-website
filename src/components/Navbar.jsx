@@ -8,18 +8,16 @@ function Navbar() {
 
     <nav className="w-full bg-linear-to-r from-white via-[#fff8dc] to-[#fff3b0] shadow-md border-b border-yellow-300">
 
-      <div className="max-w-7xl mx-auto px-5 md:px-10 py-3 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-5 md:px-10 py-1 flex items-center justify-between">
 
         {/* LOGO SECTION */}
 
         <div className="flex items-center gap-3">
-
-          <img
-            src="/logo.png"
-            alt="logo"
-            className="w-12 h-12 md:w-14 md:h-14 rounded-full object-cover border-2 border-yellow-500"
-          />
-
+        <img
+          src="/logo.jpg"
+          alt="logo"
+          className="w-16 md:w-20 h-auto object-contain"
+        />
 
 
           <div>

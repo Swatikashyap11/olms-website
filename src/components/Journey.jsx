@@ -4,10 +4,9 @@ function Founder() {
   return (
     <section
       id="founder"
-      className="bg-gradient-to-b from-white via-[#fffdf5] to-[#fff6d6] py-20 px-6 md:px-16"
+      className="bg-linear-to-b from-white via-[#fffdf5] to-[#fff6d6] py-20 px-6 md:px-16"
     >
       <div className="max-w-7xl mx-auto">
-
         {/* Heading */}
         <div className="text-center mb-14">
           <p
@@ -26,19 +25,16 @@ function Founder() {
           </h2>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
-
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* LEFT SIDE */}
           <div>
-
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2AxipcGYgnMi2AQq82wBGNx7d3EV8fmOqqsv75o7vTg_RUE_Oz0_xVu0z&s=10"
               alt="Surbhi Madan"
-              className="w-full h-[650px] object-cover rounded-3xl border-[6px] border-yellow-400 shadow-xl"
+              className="w-full h-[650px] object-cover rounded-3xl border-[6px] border-yellow-400 shadow-2xl"
             />
 
-            <div className="text-center mt-5">
-
+            <div className="text-center mt-6">
               <h3
                 className="text-3xl text-yellow-700"
                 style={{ fontFamily: "Oswald" }}
@@ -47,24 +43,41 @@ function Founder() {
               </h3>
 
               <p
-                className="text-xl text-gray-600 mt-2"
+                className="text-lg text-gray-600 mt-2"
                 style={{ fontFamily: "Poppins" }}
               >
                 Founder & Creative Director
               </p>
 
-            </div>
+              {/* Highlight Badges */}
+              <div className="flex flex-wrap justify-center gap-3 mt-6">
+                <div className="bg-yellow-100 border border-yellow-300 rounded-full px-5 py-2 shadow-sm">
+                  <span className="font-semibold text-yellow-800 text-sm">
+                    12+ Years Experience
+                  </span>
+                </div>
 
+                <div className="bg-yellow-100 border border-yellow-300 rounded-full px-5 py-2 shadow-sm">
+                  <span className="font-semibold text-yellow-800 text-sm">
+                    Professional Dancer
+                  </span>
+                </div>
+
+                <div className="bg-yellow-100 border border-yellow-300 rounded-full px-5 py-2 shadow-sm">
+                  <span className="font-semibold text-yellow-800 text-sm">
+                    Theatre Educator
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* RIGHT SIDE */}
-
           <div>
-
-            <FaQuoteLeft className="text-yellow-500 text-2xl mb-3" />
+            <FaQuoteLeft className="text-yellow-500 text-3xl mb-4" />
 
             <h3
-              className="text-3xl md:text-4xl font-black leading-tight"
+              className="text-3xl md:text-5xl font-black leading-tight"
               style={{ fontFamily: "Oswald" }}
             >
               Every Child Deserves
@@ -72,90 +85,62 @@ function Founder() {
             </h3>
 
             <p
+              className="mt-6 text-lg leading-9 text-gray-700"
+              style={{ fontFamily: "Poppins" }}
+            >
+              <span className="font-semibold text-yellow-700">
+                Surbhi Madan
+              </span>{" "}
+              is the Founder of{" "}
+              <span className="font-semibold text-yellow-700">
+                Oompa Loompa Musicals
+              </span>{" "}
+              and has over <strong>12 years of experience</strong> in children's
+              musical theatre.
+            </p>
+
+            <p
               className="mt-5 text-lg leading-9 text-gray-700"
               style={{ fontFamily: "Poppins" }}
             >
-              At Oompa Loompa Musicals, every child is encouraged to dream,
-              perform and express themselves through theatre.
+              A professional dancer and passionate educator, she began her
+              career teaching in schools before founding Oompa Loompa Musicals.
+              Her vision was to create a joyful space where children can explore
+              their creativity, develop confidence, and express themselves
+              through the magic of musical theatre.
+            </p>
 
-              <br /><br />
-
-              We believe drama is not just about acting—it is about building
-              confidence, creativity, empathy and communication skills that
-              stay with children for life.
-
-              <br /><br />
-
-              Our productions, workshops and musical theatre classes create
-              unforgettable memories while helping young performers discover
-              their true potential.
-
+            <p
+              className="mt-5 text-lg leading-9 text-gray-700"
+              style={{ fontFamily: "Poppins" }}
+            >
+              She believes every child deserves a chance to shine. Through
+              immersive theatre classes, engaging workshops, and memorable
+              productions, she is dedicated to helping children build
+              confidence, creativity, teamwork, communication skills, and a
+              lifelong love for performing arts.
             </p>
 
             {/* Quote */}
-
-            <div className="mt-6 border-l-4 border-yellow-500 pl-6">
-
+            <div className="mt-8 border-l-4 border-yellow-500 pl-6">
               <p
                 className="text-2xl italic text-gray-800 leading-10"
                 style={{ fontFamily: "Poppins" }}
               >
-                "We don't just teach theatre,
-                we help children find confidence,
-                creativity and their own voice."
+                "Every child deserves a stage where they feel seen, heard, and
+                celebrated. Theatre has the power to build confidence that lasts
+                a lifetime."
               </p>
 
+              <p
+                className="mt-4 text-yellow-700 font-semibold text-lg"
+                style={{ fontFamily: "Oswald" }}
+              >
+                — Surbhi Madan
+              </p>
             </div>
-
-            {/* Cards */}
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-10">
-
-              <div className="bg-white rounded-2xl shadow-lg p-6 border border-yellow-200">
-                <h4
-                  className="text-yellow-700 text-xl mb-3"
-                  style={{ fontFamily: "Oswald" }}
-                >
-                  Confidence
-                </h4>
-
-                <p className="text-gray-600 text-sm leading-7">
-                  Every child learns to perform with confidence.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-2xl shadow-lg p-6 border border-yellow-200">
-                <h4
-                  className="text-yellow-700 text-xl mb-3"
-                  style={{ fontFamily: "Oswald" }}
-                >
-                  Creativity
-                </h4>
-
-                <p className="text-gray-600 text-sm leading-7">
-                  We inspire imagination through theatre and acting.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-2xl shadow-lg p-6 border border-yellow-200">
-                <h4
-                  className="text-yellow-700 text-xl mb-3"
-                  style={{ fontFamily: "Oswald" }}
-                >
-                  Teamwork
-                </h4>
-
-                <p className="text-gray-600 text-sm leading-7">
-                  Students learn collaboration, discipline and leadership.
-                </p>
-              </div>
-
-            </div>
-
           </div>
-
         </div>
-
       </div>
     </section>
   );

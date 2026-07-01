@@ -26,7 +26,7 @@ function Footer() {
           </p>
 
           <h1
-            className="text-4xl md:text-6xl uppercase font-black text-black leading-tight"
+            className="text-4xl md:text-4xl uppercase font-black text-black leading-tight"
             style={{ fontFamily: "Oswald, sans-serif" }}
           >
             Join Our Musical Family

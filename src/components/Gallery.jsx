@@ -2,12 +2,12 @@ function Gallery() {
 
   const images = [
 
-    "/gallery1.jpg",
-    "/gallery2.jpg",
-    "/photo3.jpg",
-    "/photo4.jpg",
-    "/photo5.jpg",
-    "/photo2.jpg"
+    "/image6.jpeg",
+    "/image7.jpeg",
+    "/image8.jpeg",
+    "/image9.jpeg",
+    "/image10.jpeg",
+    "/image11.jpeg"
 
   ]
 
@@ -32,7 +32,7 @@ function Gallery() {
           </p>
 
           <h1
-            className="text-4xl md:text-6xl uppercase font-black text-black"
+            className="text-4xl md:text-5xl uppercase font-black text-black"
             style={{ fontFamily: "Oswald, sans-serif" }}
           >
             Moments On Stage

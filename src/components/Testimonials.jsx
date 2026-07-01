@@ -3,19 +3,19 @@ function Testimonials() {
   const videos = [
 
     {
-      video: "/v1.MOV",
+      video: "/test 1.mp4",
+      name: "Reyansh's Parent",
+      role: "Parent"
+    },
+
+    {
+      video: "/test 2.mp4",
       name: "xyz",
       role: "Parent"
     },
 
     {
-      video: "/test2.mp4",
-      name: "xyz",
-      role: "Student"
-    },
-
-    {
-      video: "/test3.mp4",
+      video: "/test 3.mp4",
       name: "xyz",
       role: "Parent"
     }
@@ -43,10 +43,10 @@ function Testimonials() {
           </p>
 
           <h1
-            className="text-4xl md:text-7xl uppercase font-black text-black"
+            className="text-2xl md:text-4xl uppercase font-black text-black"
             style={{ fontFamily: "Oswald, sans-serif" }}
           >
-            Where Confidence Takes The Stage
+              Every smile, every performance, every journey tells a story.
           </h1>
 
         </div>
