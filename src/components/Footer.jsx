@@ -1,8 +1,10 @@
 import {
   FaInstagram,
   FaYoutube,
-  FaFacebookF
-} from "react-icons/fa"
+  FaFacebookF,
+  FaMapMarkerAlt,
+  FaEnvelope,
+} from "react-icons/fa";
 
 function Footer() {
 
@@ -98,8 +100,7 @@ function Footer() {
               className="text-gray-700 leading-8 mb-7 text-lg"
               style={{ fontFamily: "Oswald, sans-serif" }}
             >
-              Join our acting, singing and
-              musical theatre classes today.
+              Join Us Now.
             </p>
 
 
@@ -117,50 +118,59 @@ function Footer() {
 
 
 
-          {/* CONTACT */}
+ {/* CONTACT */}
 
-          <div className="p-2">
+<div className="p-2">
 
-            <h2
-              className="text-2xl md:text-3xl text-yellow-700 uppercase mb-5"
-              style={{ fontFamily: "Oswald, sans-serif" }}
-            >
-              Contact
-            </h2>
+  <h2
+    className="text-2xl md:text-3xl text-yellow-700 uppercase mb-5"
+    style={{ fontFamily: "Oswald, sans-serif" }}
+  >
+    Contact
+  </h2>
 
-            <div
-              className="text-lg leading-9 text-gray-800"
-              style={{ fontFamily: "Oswald, sans-serif" }}
-            >
+  <div
+    className="text-lg leading-9 text-gray-800"
+    style={{ fontFamily: "Oswald, sans-serif" }}
+  >
 
-              <p className="font-semibold text-yellow-700">
-                Oompa Loompa Musicals
-              </p>
+    <p className="font-semibold text-yellow-700">
+      Oompa Loompa Musicals
+    </p>
 
-              <p>
-                New Delhi, India
-              </p>
+    {/* Locations */}
+    <div className="mt-3">
 
-              <br />
 
-              <p>
-                +91 92203 39882
-              </p>
+      <p className="flex items-center gap-2">
+      <FaMapMarkerAlt className="text-yellow-600" />
+      GK II, New Delhi
+    </p>
+      <p className="flex items-center gap-2">
+        <FaMapMarkerAlt className="text-yellow-600" />
+        Punjabi Bagh
+      </p>
+      <p className="flex items-center gap-2">
+      <FaMapMarkerAlt className="text-yellow-600" />
+      Gurgaon
+    </p>
+    </div>
 
-              <p>
-                +91 98189 50374
-              </p>
+    {/* <div className="mt-5">
+      <p>📞 +91 92203 39882</p>
+      <p>📞 +91 98189 50374</p>
+    </div> */}
 
-              <br />
+    <div className="mt-5">
+    <p className="flex items-center gap-2 text-yellow-700 mt-5">
+    <FaEnvelope />
+    oompaloompamusicals@gmail.com
+  </p>
+    </div>
 
-              <p className="text-yellow-700 wrap-break-word">
-                oompaloompamusicals@gmail.com
-              </p>
+  </div>
 
-            </div>
-
-          </div>
-
+</div>
 
 
           {/* FOLLOW US */}

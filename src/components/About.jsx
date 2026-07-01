@@ -59,12 +59,7 @@ function About() {
             style={{ fontFamily: "oswald, sans-serif" }}
           >
 
-            Oompa Loompa Musicals is a creative
-            performing arts academy where kids
-            explore acting, singing, dancing and
-            live stage performances in a fun,
-            expressive and confidence-building
-            environment.
+         Every child has a story to tell. Through musical theatre, we help children discover their voice, express their creativity and build the confidence to perform with pride.
 
           </p>
 
@@ -82,7 +77,7 @@ function About() {
                 className="text-yellow-600 text-3xl font-black"
                 style={{ fontFamily: "Oswald, sans-serif" }}
               >
-                100+
+                500+
               </h2>
 
               <p
@@ -104,7 +99,7 @@ function About() {
                 className="text-yellow-600 text-3xl font-black"
                 style={{ fontFamily: "Oswald, sans-serif" }}
               >
-                500+
+                1000+
               </h2>
 
               <p

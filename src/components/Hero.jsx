@@ -23,15 +23,15 @@ function Hero() {
             className="uppercase leading-[0.9] font-black"
             style={{ fontFamily: "Oswald, sans-serif" }}
           >
-            <span className="block text-white text-xl md:text-8xl">
+            <span className="block text-white text-4xl md:text-8xl">
               MUSICAL
             </span>
 
-            <span className="block text-yellow-400 text-5xl md:text-8xl">
+            <span className="block text-yellow-400 text-4xl md:text-8xl">
               THEATRE
             </span>
 
-            <span className="block text-white text-6xl md:text-8xl">
+            <span className="block text-white text-4xl md:text-8xl">
               CLASSES
             </span>
 
@@ -45,7 +45,7 @@ function Hero() {
 
           {/* Tagline */}
           <h3
-            className="mt-6 text-yellow-400 text-xl md:text-3xl uppercase font-bold"
+            className="mt-6 text-yellow-400 text-md md:text-3xl uppercase font-bold"
             style={{ fontFamily: "Oswald, sans-serif" }}
           >
             Act. Sing. Dance. Shine On Stage.
@@ -53,45 +53,30 @@ function Hero() {
 
           {/* Description */}
 
-<div className="mt-8 max-w-[600px]">
+{/* <div className="mt-8 max-w-150">
 
   <h2
-    className="text-[42px] md:text-[60px] leading-[0.9] uppercase"
-    style={{ fontFamily: "Bangers, cursive" }}
+    className="text-white text-3xl md:text-6xl font-black uppercase leading-none"
+    style={{ fontFamily: "Bebas Neue, sans-serif" }}
   >
-    <span className="block text-yellow-400 drop-shadow-[0_0_15px_rgba(255,215,0,0.9)]">
-      CONFIDENCE
-    </span>
-
-    <span className="block text-white">
-      BEGINS ON STAGE.
+    Confidence
+    <span className="block text-yellow-400">
+      Begins On Stage
     </span>
   </h2>
 
-  {/* Yellow Shiny Line */}
-  <div className="relative mt-5 w-[340px] md:w-[480px]">
-    <div className="h-[4px] rounded-full bg-gradient-to-r from-yellow-300 via-yellow-400 to-yellow-300 shadow-[0_0_20px_#FFD700]"></div>
-
-    <div className="absolute -left-1 -top-[6px] h-4 w-4 rounded-full bg-yellow-300 shadow-[0_0_25px_#FFD700]"></div>
-
-    <div className="absolute left-1/2 -translate-x-1/2 -top-[3px] h-2 w-2 rounded-full bg-white shadow-[0_0_18px_white]"></div>
-  </div>
+  {/* Shiny Line */}
+  {/* <div className="mt-5 h-[3px] w-[420px] rounded-full bg-gradient-to-r from-yellow-300 via-yellow-400 to-transparent shadow-[0_0_18px_#FFD700]" />
 
   <p
-    className="mt-7 text-[20px] leading-9 text-gray-200"
-    style={{ fontFamily: "'Patrick Hand', cursive" }}
+    className="mt-7 text-lg text-gray-200 leading-8 max-w-[520px]"
+    style={{ fontFamily: "Poppins" }}
   >
-    Through acting, singing and dance,
-    <span className="text-yellow-400 font-bold">
-      {" "}children discover their voice{" "}
-    </span>
-    while performing in
-    <span className="text-yellow-400 font-bold">
-      {" "}spectacular musicals.
-    </span>
+    Through acting, singing and dance, children discover
+    their voice while performing in spectacular musicals.
   </p>
 
-</div>
+</div> */} 
 
           {/* Buttons */}
           <div className="flex flex-wrap gap-4 mt-8">
@@ -100,15 +85,10 @@ function Hero() {
               className="bg-yellow-400 hover:bg-yellow-300 text-black font-bold px-8 py-4 rounded-xl transition"
               style={{ fontFamily: "Oswald, sans-serif" }}
             >
-              JOIN CLASSES →
+              Join Now →
             </button>
 
-            <button
-              className="border-2 border-white text-white hover:bg-white hover:text-black px-8 py-4 rounded-xl transition font-bold"
-              style={{ fontFamily: "Oswald, sans-serif" }}
-            >
-              WATCH PERFORMANCES →
-            </button>
+
 
           </div>
         </div>
