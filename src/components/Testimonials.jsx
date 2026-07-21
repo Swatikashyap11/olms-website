@@ -20,13 +20,13 @@ function Testimonials() {
       role: "Parent"
     }
 
-  ]
+  ];
 
   return (
 
     <section
       id="testimonial"
-      className="bg-linear-to-b from-[#fffdf5] via-[#fff7d6] to-[#ffe680] px-6 md:px-16 py-20"
+      className="bg-white px-6 md:px-16 py-20"
     >
 
       <div className="max-w-7xl mx-auto">
@@ -36,22 +36,24 @@ function Testimonials() {
         <div className="text-center mb-14">
 
           <p
-            className="text-yellow-700 uppercase tracking-[6px] mb-3 font-bold"
+            className="text-[#1565C0] uppercase tracking-[6px] mb-3 font-bold"
             style={{ fontFamily: "Oswald, sans-serif" }}
           >
             Testimonials
           </p>
 
           <h1
-            className="text-2xl md:text-4xl uppercase font-black text-black"
-            style={{ fontFamily: "Oswald, sans-serif" }}
+            className="text-2xl md:text-4xl uppercase text-black"
+            style={{ fontFamily: "Luckiest Guy, cursive" }}
           >
-              Every smile, every performance, every journey tells a story.
+            Every Smile, Every Performance,
+            <br />
+            Every Journey Tells A Story.
           </h1>
 
+          <div className="w-24 h-1 bg-[#FFD600] mx-auto mt-5 rounded-full"></div>
+
         </div>
-
-
 
         {/* VIDEO GRID */}
 
@@ -63,7 +65,7 @@ function Testimonials() {
 
               <div
                 key={index}
-                className="bg-white rounded-3xl overflow-hidden shadow-xl hover:-translate-y-2 transition duration-500"
+                className="bg-white rounded-3xl overflow-hidden border-4 border-[#1565C0] shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-500"
               >
 
                 {/* VIDEO */}
@@ -71,24 +73,22 @@ function Testimonials() {
                 <video
                   src={item.video}
                   controls
-                  className="w-full h-125 object-cover"
+                  className="w-full h-[500px] object-cover"
                 />
-
-
 
                 {/* CONTENT */}
 
                 <div className="p-5">
 
                   <h2
-                    className="text-2xl uppercase text-black"
+                    className="text-2xl text-black uppercase"
                     style={{ fontFamily: "Oswald, sans-serif" }}
                   >
                     {item.name}
                   </h2>
 
                   <p
-                    className="text-yellow-700 mt-1"
+                    className="text-[#1565C0] mt-1"
                     style={{ fontFamily: "Oswald, sans-serif" }}
                   >
                     {item.role}
@@ -108,8 +108,8 @@ function Testimonials() {
 
     </section>
 
-  )
+  );
 
 }
 
-export default Testimonials
+export default Testimonials;

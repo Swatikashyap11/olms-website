@@ -39,7 +39,7 @@ function Hero() {
               className="block text-white normal-case text-3xl md:text-5xl mt-2"
               style={{ fontFamily: "cursive" }}
             >
-              for Kids
+              for <span className="text-[#1565C0]"> Kids </span>
             </span>
           </h1>
 
@@ -48,7 +48,7 @@ function Hero() {
             className="mt-6 text-yellow-400 text-lg md:text-2xl uppercase font-bold tracking-wide"
             style={{ fontFamily: "Oswald, sans-serif" }}
           >
-            Act. Sing. Dance. Shine On Stage.
+            Act. Sing. Dance.  <span className="text-white"> Shine On Stage.</span>
           </h3>
 
           {/* Button */}

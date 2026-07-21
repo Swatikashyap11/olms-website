@@ -1,37 +1,40 @@
-import { useState } from "react"
+import { useState } from "react";
 
 function Navbar() {
-
-  const [menuOpen, setMenuOpen] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
+    <nav className="w-full bg-gradient-to-r from-[#0B3C91] via-[#1565C0] to-[#29B6F6] shadow-xl border-b-2 border-cyan-300">
 
-    <nav className="w-full bg-linear-to-r from-white via-[#fff8dc] to-[#fff3b0] shadow-md border-b border-yellow-300">
+      <div className="max-w-[1500px] mx-auto px-3 lg:px-6 py-2 flex items-center justify-between">
 
-      <div className="max-w-7xl mx-auto px-5 md:px-10 py-1 flex items-center justify-between">
+        {/* LOGO */}
+        <div className="flex items-center gap-2">
 
-        {/* LOGO SECTION */}
-
-        <div className="flex items-center gap-3">
-        <img
-          src="/logo.jpg"
-          alt="logo"
-          className="w-16 md:w-20 h-auto object-contain"
-        />
-
+          <img
+            src="/logo-trans.png"
+            alt="logo"
+            className="w-14 md:w-16 object-contain transition-transform duration-300 hover:scale-105"
+          />
 
           <div>
 
             <h1
-              className="text-black text-2xl md:text-4xl leading-none font-medium"
-              style={{ fontFamily: "Fredoka, sans-serif" }}
+              className="text-white text-3xl md:text-[42px] leading-none drop-shadow-lg"
+              style={{
+                fontFamily: "Luckiest Guy, cursive",
+                letterSpacing: "1px",
+              }}
             >
               Oompa Loompa
             </h1>
 
             <p
-              className="text-yellow-600 text-sm md:text-lg tracking-wide"
-              style={{ fontFamily: "Oswald, sans-serif" }}
+              className="text-yellow-300 text-base md:text-[18px] tracking-[0.35em]"
+              style={{
+                fontFamily: "Luckiest Guy, cursive",
+                fontWeight: "500",
+              }}
             >
               MUSICALS
             </p>
@@ -40,60 +43,56 @@ function Navbar() {
 
         </div>
 
-
-
         {/* DESKTOP MENU */}
 
         <ul
-          className="hidden lg:flex items-center gap-7 uppercase text-sm"
-          style={{ fontFamily: "Oswald, sans-serif" }}
+          className="hidden lg:flex items-center gap-8 ml-20"
+          style={{ fontFamily: "Bungee, cursive" }}
         >
 
           <a
             href="#home"
-            className="text-yellow-600 font-semibold hover:text-black transition duration-300"
+            className="text-yellow-300 text-[15px] tracking-wider transition-all duration-300 hover:text-white hover:scale-110"
           >
-            Home
+            HOME
           </a>
 
           <a
             href="#about"
-            className="text-black hover:text-yellow-600 transition duration-300"
+            className="text-white text-[15px] tracking-wider transition-all duration-300 hover:text-yellow-300 hover:scale-110"
           >
-            About
+            ABOUT
           </a>
 
           <a
             href="#productions"
-            className="text-black hover:text-yellow-600 transition duration-300"
+            className="text-white text-[15px] tracking-wider transition-all duration-300 hover:text-yellow-300 hover:scale-110"
           >
-            Productions
+            PRODUCTIONS
           </a>
 
           <a
             href="#gallery"
-            className="text-black hover:text-yellow-600 transition duration-300"
+            className="text-white text-[15px] tracking-wider transition-all duration-300 hover:text-yellow-300 hover:scale-110"
           >
-            Gallery
+            GALLERY
           </a>
 
           <a
             href="#testimonial"
-            className="text-black hover:text-yellow-600 transition duration-300"
+            className="text-white text-[15px] tracking-wider transition-all duration-300 hover:text-yellow-300 hover:scale-110"
           >
-            Testimonial
+            TESTIMONIAL
           </a>
 
           <a
             href="#contact"
-            className="text-black hover:text-yellow-600 transition duration-300"
+            className="text-white text-[15px] tracking-wider transition-all duration-300 hover:text-yellow-300 hover:scale-110"
           >
-            Contact
+            CONTACT
           </a>
 
         </ul>
-
-
 
         {/* MOBILE BUTTON */}
 
@@ -101,68 +100,74 @@ function Navbar() {
           onClick={() => setMenuOpen(!menuOpen)}
           className="lg:hidden flex flex-col gap-1"
         >
-
-          <span className="w-6 h-0.5 bg-black rounded-full"></span>
-
-          <span className="w-6 h-0.5 bg-black rounded-full"></span>
-
-          <span className="w-6 h-0.5 bg-black rounded-full"></span>
-
+          <span className="w-7 h-1 bg-white rounded-full"></span>
+          <span className="w-7 h-1 bg-white rounded-full"></span>
+          <span className="w-7 h-1 bg-white rounded-full"></span>
         </button>
 
       </div>
 
-
-
       {/* MOBILE MENU */}
 
-      {
+      {menuOpen && (
 
-        menuOpen && (
+        <div
+          className="lg:hidden bg-gradient-to-b from-[#0B3C91] via-[#1565C0] to-[#29B6F6] px-6 py-6 border-t border-cyan-300"
+          style={{ fontFamily: "Bungee, cursive" }}
+        >
 
-          <div
-            className="lg:hidden bg-linear-to-b from-white to-[#fff3b0] border-t border-yellow-300 px-6 py-6"
-            style={{ fontFamily: "Oswald, sans-serif" }}
-          >
+          <ul className="flex flex-col gap-5">
 
-        <ul className="flex flex-col gap-5 uppercase text-base">
+            <a
+              href="#home"
+              className="text-yellow-300 text-lg"
+            >
+              HOME
+            </a>
 
-          <a href="#home" className="text-yellow-600 font-semibold">
-            Home
-          </a>
+            <a
+              href="#about"
+              className="text-white text-lg hover:text-yellow-300 transition"
+            >
+              ABOUT
+            </a>
 
-          <a href="#about" className="text-black hover:text-yellow-600 transition">
-            About
-          </a>
+            <a
+              href="#productions"
+              className="text-white text-lg hover:text-yellow-300 transition"
+            >
+              PRODUCTIONS
+            </a>
 
-          <a href="#productions" className="text-black hover:text-yellow-600 transition">
-            Productions
-          </a>
+            <a
+              href="#gallery"
+              className="text-white text-lg hover:text-yellow-300 transition"
+            >
+              GALLERY
+            </a>
 
-          <a href="#gallery" className="text-black hover:text-yellow-600 transition">
-            Gallery
-          </a>
+            <a
+              href="#testimonial"
+              className="text-white text-lg hover:text-yellow-300 transition"
+            >
+              TESTIMONIAL
+            </a>
 
-          <a href="#testimonial" className="text-black hover:text-yellow-600 transition">
-            Testimonial
-          </a>
+            <a
+              href="#contact"
+              className="text-white text-lg hover:text-yellow-300 transition"
+            >
+              CONTACT
+            </a>
 
-          <a href="#contact" className="text-black hover:text-yellow-600 transition">
-            Contact
-          </a>
+          </ul>
 
-        </ul>
+        </div>
 
-          </div>
-
-        )
-
-      }
+      )}
 
     </nav>
-
-  )
-
+  );
 }
 
-export default Navbar 
+export default Navbar;
