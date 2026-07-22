@@ -51,7 +51,7 @@ function Footer() {
               <p>Tuesday - Friday</p>
 
               <span className="text-[#FFD54F] font-semibold">
-                4:00 pm - 7:00 pm
+                12:00 pm - 7:00 pm
               </span>
 
               <p className="mt-4">Saturday - Sunday</p>
@@ -60,12 +60,12 @@ function Footer() {
                 10:00 am - 7:00 pm
               </span>
 
-              <p className="mt-4">
+              {/* <p className="mt-4">
                 Monday
-                <span className="text-red-300 ml-3 font-semibold">
+                <span className="text-red-00 ml-3">
                   Closed
                 </span>
-              </p>
+              </p> */}
             </div>
           </div>
 
@@ -117,6 +117,12 @@ function Footer() {
               </p>
 
               <div className="mt-4 space-y-2">
+
+                <p className="flex items-center gap-3">
+                  <FaMapMarkerAlt className="text-[#FFD54F]" />
+                  Gurgaon
+                </p>
+
                 <p className="flex items-center gap-3">
                   <FaMapMarkerAlt className="text-[#FFD54F]" />
                   GK II, New Delhi
@@ -127,10 +133,6 @@ function Footer() {
                   Punjabi Bagh
                 </p>
 
-                <p className="flex items-center gap-3">
-                  <FaMapMarkerAlt className="text-[#FFD54F]" />
-                  Gurgaon
-                </p>
               </div>
 
               <div className="mt-5">
@@ -162,7 +164,7 @@ function Footer() {
                 <FaInstagram />
               </a>
 
-              <a
+              {/* <a
                 href="https://www.youtube.com/@Oompaloompamusicals"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -178,7 +180,7 @@ function Footer() {
                 className="w-14 h-14 bg-white text-[#1565C0] rounded-full flex items-center justify-center text-2xl hover:bg-[#FFD54F] hover:text-[#0D47A1] hover:scale-110 transition-all duration-300 shadow-lg"
               >
                 <FaFacebookF />
-              </a>
+              </a> */}
             </div>
 
             <p

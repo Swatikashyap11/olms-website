@@ -4,19 +4,19 @@ function Testimonials() {
 
     {
       video: "/test 1.mp4",
-      name: "Reyansh's Parent",
+      name: "They have fun",
       role: "Parent"
     },
 
     {
       video: "/test 2.mp4",
-      name: "xyz",
+      name: "she's enjoying herself",
       role: "Parent"
     },
 
     {
       video: "/test 3.mp4",
-      name: "xyz",
+      name: "confident and dramatic",
       role: "Parent"
     }
 

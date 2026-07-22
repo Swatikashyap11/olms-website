@@ -84,7 +84,7 @@ function Founder() {
               style={{ fontFamily: "Oswald" }}
             >
               Every Child Deserves
-              <span className="text-[#1565C0]"> A Stage.</span>
+              <span className="text-[#1336b4d3]"> A Stage.</span>
             </h3>
 
             <p
@@ -119,7 +119,7 @@ function Founder() {
             >
               She believes every child deserves a chance to shine. Through
               immersive theatre classes, engaging workshops, and memorable
-              productions, she is dedicated to helping children build
+              productions, she is dedicated to help children build
               confidence, creativity, teamwork, communication skills, and a
               lifelong love for performing arts.
             </p>

@@ -128,12 +128,7 @@ function Productions() {
                   {item.age}
                 </p>
 
-                <button
-                  className="mt-5 bg-[#1565C0] hover:bg-[#FFD600] hover:text-black text-white px-6 py-2 rounded-full transition-all duration-300"
-                  style={{ fontFamily: "Oswald, sans-serif" }}
-                >
-                  Explore
-                </button>
+
               </div>
             </div>
           ))}

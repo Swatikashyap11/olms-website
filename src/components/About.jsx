@@ -72,20 +72,11 @@ function About() {
 
               <p>
                 At Oompa Loompa Musicals, we celebrate imagination,
-                self-expression and joyful learning, creating unforgettable
+                self-expression, joyful learning and creating unforgettable
                 experiences for children and families alike.
               </p>
 
             </div>
-
-            {/* BUTTON */}
-
-            <button
-              className="mt-10 bg-[#1565C0] text-white px-8 py-3 rounded-full hover:bg-[#FFD600] hover:text-black transition-all duration-300 shadow-lg"
-              style={{ fontFamily: "Oswald" }}
-            >
-              Explore More
-            </button>
 
           </div>
 
