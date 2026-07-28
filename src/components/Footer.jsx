@@ -1,209 +1,228 @@
 import {
-  FaInstagram,
-  FaYoutube,
-  FaFacebookF,
+  FaClock,
   FaMapMarkerAlt,
+  FaWhatsapp,
+  FaPhoneAlt,
   FaEnvelope,
+  FaInstagram,
+  FaPen,
 } from "react-icons/fa";
 
 function Footer() {
   return (
     <footer
       id="contact"
-      className="bg-gradient-to-b from-[#0D47A1] via-[#1565C0] to-[#1976D2] text-white px-6 md:px-16 py-12"
+      className="bg-[#0D47A1] text-white pt-8 pb-4 px-6 md:px-14"
     >
       <div className="max-w-7xl mx-auto">
-        {/* TOP HEADING */}
 
-        <div className="text-center mb-12">
+        {/* HEADER */}
+
+        <div className="text-center">
+
           <p
-            className="text-[#FFD54F] uppercase tracking-[6px] mb-3 font-bold text-sm md:text-base"
+            className="uppercase tracking-[6px] text-[#FFD600] text-sm font-bold"
             style={{ fontFamily: "Oswald, sans-serif" }}
           >
             Contact & Registration
           </p>
 
           <h1
-            className="text-4xl md:text-5xl uppercase text-white leading-tight"
+            className="text-4xl md:text-5xl text-white uppercase mt-2"
             style={{ fontFamily: "Oswald, sans-serif" }}
           >
             Join Our Musical Family
           </h1>
+
+          <div className="w-28 h-1 bg-[#FFD600] rounded-full mx-auto mt-3"></div>
+
         </div>
 
-        {/* FOOTER CONTENT */}
+        {/* CONTENT */}
 
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-12 border-t border-[#FFD54F]/40 pt-10">
+        <div className="grid md:grid-cols-3 gap-8 mt-8 pb-4 border-b border-white/20">
+
           {/* OPENING HOURS */}
 
           <div>
-            <h2
-              className="text-2xl md:text-3xl text-[#FFD54F] uppercase mb-5"
-              style={{ fontFamily: "Oswald, sans-serif" }}
-            >
-              Opening Hours
-            </h2>
+
+            <div className="flex items-center gap-3 mb-5">
+
+              <FaClock className="text-white text-3xl" />
+
+              <h2
+                className="text-black text-3xl"
+                style={{ fontFamily: "Oswald, sans-serif" }}
+              >
+                Opening Hours
+              </h2>
+
+            </div>
 
             <div
-              className="leading-9 text-lg text-blue-50"
+              className="space-y-5"
               style={{ fontFamily: "Oswald, sans-serif" }}
             >
-              <p>Tuesday - Friday</p>
 
-              <span className="text-[#FFD54F] font-semibold">
-                12:00 pm - 7:00 pm
-              </span>
+              <div>
 
-              <p className="mt-4">Saturday - Sunday</p>
+                <p className="text-white text-xl">
+                  Tuesday - Friday
+                </p>
 
-              <span className="text-[#FFD54F] font-semibold">
-                10:00 am - 7:00 pm
-              </span>
+                <p className="text-[#FFD600] text-xl font-semibold">
+                  12:00 PM - 7:00 PM
+                </p>
 
-              {/* <p className="mt-4">
-                Monday
-                <span className="text-red-00 ml-3">
-                  Closed
-                </span>
-              </p> */}
+              </div>
+
+              <div>
+
+                <p className="text-white text-xl">
+                  Saturday - Sunday
+                </p>
+
+                <p className="text-[#FFD600] text-xl font-semibold">
+                  10:00 AM - 7:00 PM
+                </p>
+
+              </div>
+
+              <a
+                href="https://forms.gle/HKneKFRaTaaX8zja6"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 bg-[#FFD600] text-black px-7 py-3 rounded-xl text-lg font-bold hover:bg-white transition-all duration-300 mt-3"
+                style={{ fontFamily: "Oswald, sans-serif" }}
+              >
+                <FaPen />
+                Register Now
+              </a>
+
             </div>
+
           </div>
 
-          {/* REGISTER */}
+          {/* LOCATIONS */}
 
           <div>
-            <h2
-              className="text-2xl md:text-3xl text-[#FFD54F] uppercase mb-5"
-              style={{ fontFamily: "Oswald, sans-serif" }}
-            >
-              Register
-            </h2>
 
-            <p
-              className="text-blue-50 leading-8 mb-7 text-lg"
-              style={{ fontFamily: "Oswald, sans-serif" }}
-            >
-              Join our exciting musical theatre classes and begin your
-              performing arts journey today.
-            </p>
+            <div className="flex items-center gap-3 mb-5">
 
-            <a
-              href="https://forms.gle/HKneKFRaTaaX8zja6"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-[#FFD54F] text-[#0D47A1] hover:bg-white hover:text-[#0D47A1] px-7 py-3 rounded-xl text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-yellow-300"
+              <FaMapMarkerAlt className="text-red-500 text-3xl" />
+
+              <h2
+                className="text-black text-3xl"
+                style={{ fontFamily: "Oswald, sans-serif" }}
+              >
+                Locations
+              </h2>
+
+            </div>
+
+            <div
+              className="space-y-5 text-xl"
               style={{ fontFamily: "Oswald, sans-serif" }}
             >
-              Register Now
-            </a>
+
+              <p className="flex items-center gap-3">
+                <FaMapMarkerAlt className="text-white text-lg" />
+                Gurgaon
+              </p>
+
+              <p className="flex items-center gap-3">
+                <FaMapMarkerAlt className="text-white text-lg" />
+                GK II, New Delhi
+              </p>
+
+              <p className="flex items-center gap-3">
+                <FaMapMarkerAlt className="text-white text-lg" />
+                Punjabi Bagh
+              </p>
+
+            </div>
+
           </div>
 
           {/* CONTACT */}
-
-          <div>
-            <h2
-              className="text-2xl md:text-3xl text-[#FFD54F] uppercase mb-5"
-              style={{ fontFamily: "Oswald, sans-serif" }}
-            >
-              Contact
-            </h2>
+                    <div>
 
             <div
-              className="text-lg leading-9 text-blue-50"
+              className="space-y-4"
               style={{ fontFamily: "Oswald, sans-serif" }}
             >
-              <p className="font-semibold text-[#FFD54F] text-xl">
-                Oompa Loompa Musicals
-              </p>
 
-              <div className="mt-4 space-y-2">
-
-                <p className="flex items-center gap-3">
-                  <FaMapMarkerAlt className="text-[#FFD54F]" />
-                  Gurgaon
-                </p>
-
-                <p className="flex items-center gap-3">
-                  <FaMapMarkerAlt className="text-[#FFD54F]" />
-                  GK II, New Delhi
-                </p>
-
-                <p className="flex items-center gap-3">
-                  <FaMapMarkerAlt className="text-[#FFD54F]" />
-                  Punjabi Bagh
-                </p>
-
-              </div>
-
-              <div className="mt-5">
-                <p className="flex items-center gap-3 text-[#FFD54F] break-all">
-                  <FaEnvelope />
-                  oompaloompamusicals@gmail.com
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* FOLLOW US */}
-
-          <div>
-            <h2
-              className="text-2xl md:text-3xl text-[#FFD54F] uppercase mb-5"
-              style={{ fontFamily: "Oswald, sans-serif" }}
-            >
-              Follow Us
-            </h2>
-
-            <div className="flex gap-4 flex-wrap">
-              <a
-                href="https://www.instagram.com/oompaloompamusicals?igsh=MWh4OTB1N3V0a2dwcw=="
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-14 h-14 bg-white text-[#1565C0] rounded-full flex items-center justify-center text-2xl hover:bg-[#FFD54F] hover:text-[#0D47A1] hover:scale-110 transition-all duration-300 shadow-lg"
-              >
-                <FaInstagram />
-              </a>
-
-              {/* <a
-                href="https://www.youtube.com/@Oompaloompamusicals"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-14 h-14 bg-white text-[#1565C0] rounded-full flex items-center justify-center text-2xl hover:bg-[#FFD54F] hover:text-[#0D47A1] hover:scale-110 transition-all duration-300 shadow-lg"
-              >
-                <FaYoutube />
-              </a>
+              {/* WHATSAPP */}
 
               <a
-                href="https://facebook.com"
+                href="https://wa.me/919999314238x"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-14 h-14 bg-white text-[#1565C0] rounded-full flex items-center justify-center text-2xl hover:bg-[#FFD54F] hover:text-[#0D47A1] hover:scale-110 transition-all duration-300 shadow-lg"
+                className="flex items-center gap-4 hover:text-[#FFD600] transition-all duration-300 text-xl"
               >
-                <FaFacebookF />
-              </a> */}
+                <FaWhatsapp className="text-[#25D366] text-3xl" />
+                <span>Chat on WhatsApp</span>
+              </a>
+
+              <hr className="border-white/20" />
+
+              {/* PHONE */}
+
+              <a
+                href="tel:+919999314238"
+                className="flex items-center gap-4 hover:text-[#FFD600] transition-all duration-300 text-xl"
+              >
+                <FaPhoneAlt className="text-[#FFD600] text-2xl" />
+                <span>+91 99993 14238</span>
+              </a>
+
+              <hr className="border-white/20" />
+
+              {/* EMAIL */}
+
+              <a
+                href="mailto:oompaloompamusicals@gmail.com"
+                className="flex items-center gap-4 hover:text-[#FFD600] transition-all duration-300 text-xl break-all"
+              >
+                <FaEnvelope className="text-[#FFD600] text-2xl" />
+                <span>oompaloompamusicals@gmail.com</span>
+              </a>
+
+              <hr className="border-white/20" />
+
+              {/* INSTAGRAM */}
+
+              <a
+                href="https://www.instagram.com/oompaloompamusicals"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-4 hover:text-[#FFD600] transition-all duration-300 text-xl"
+              >
+                <FaInstagram className="text-[#FFD600] text-2xl" />
+                <span>@oompaloompamusicals</span>
+              </a>
+
             </div>
 
-            <p
-              className="text-blue-50 mt-7 leading-8 text-lg"
-              style={{ fontFamily: "Oswald, sans-serif" }}
-            >
-              Follow our journey and stay updated with performances,
-              workshops, auditions, and exciting musical events.
-            </p>
           </div>
+
         </div>
 
         {/* COPYRIGHT */}
 
-        <div className="border-t border-[#FFD54F]/30 mt-10 pt-6 text-center">
+        <div className="pt-3 text-center">
+
           <p
-            className="text-blue-100 text-sm md:text-base"
+            className="text-white/80 text-base"
             style={{ fontFamily: "Poppins, sans-serif" }}
           >
             © 2026 Oompa Loompa Musicals. All Rights Reserved.
           </p>
+
         </div>
+
       </div>
+
     </footer>
   );
 }

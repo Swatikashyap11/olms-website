@@ -4,7 +4,7 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="w-full bg-gradient-to-r from-[#0B3C91] via-[#1565C0] to-[#29B6F6] shadow-xl border-b-2 border-cyan-300">
+    <nav className="w-full bg-[#0D47A1] shadow-xl border-b-2 border-cyan-300">
 
       <div className="max-w-[1500px] mx-auto px-3 lg:px-6 py-2 flex items-center justify-between">
 
@@ -14,27 +14,21 @@ function Navbar() {
           <img
             src="/logo-trans.png"
             alt="logo"
-            className="w-14 md:w-16 object-contain transition-transform duration-300 hover:scale-105"
+            className="w-14 md:w-17 object-contain transition-transform duration-300 hover:scale-105"
           />
 
           <div>
 
             <h1
               className="text-white text-3xl md:text-[42px] leading-none drop-shadow-lg"
-              style={{
-                fontFamily: "Luckiest Guy, cursive",
-                letterSpacing: "1px",
-              }}
+              style={{ fontFamily: "Chewy, cursive" }}
             >
               Oompa Loompa
             </h1>
 
             <p
               className="text-yellow-300 text-base md:text-[18px] tracking-[0.35em]"
-              style={{
-                fontFamily: "Luckiest Guy, cursive",
-                fontWeight: "500",
-              }}
+              style={{ fontFamily: "Chewy, cursive" }}
             >
               MUSICALS
             </p>
@@ -47,7 +41,7 @@ function Navbar() {
 
         <ul
           className="hidden lg:flex items-center gap-8 ml-20"
-          style={{ fontFamily: "Bungee, cursive" }}
+           style={{ fontFamily: "Chewy, cursive" }}
         >
 
           <a
